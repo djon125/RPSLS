@@ -18,4 +18,8 @@
 #classes
 # human class
 # computer/ai class
-#
+
+from game import Game
+
+game_one = Game()
+game_one.run_game()
