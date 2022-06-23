@@ -12,7 +12,7 @@ class Game:
     def get_rules(self):
         print()
         print('Welcome to Rock Paper Scissor Lizard Spock')
-        print('Each match will be besr of three')
+        print('Each match will be best of three')
         print('The rules are simple...')
         print(' Rock crushes Scissors\n Rock crushes Lizard\n Paper disproves Spock\n Paper covers Rock')
         print(' Scissors cuts Paper\n Scissors decapitates Lizard\n Lizard poisons Spock\n Lizard eats Paper')
@@ -21,12 +21,12 @@ class Game:
 
 
     def run_game(self):
-        self.get_rules()
+        #self.get_rules()
         self.player_h.choose_gesture()
         print(self.player_h.choice)
         self.player_one.choose_gesture()
         self.player_two.choose_gesture()
-        
+
 
 
         # while self.player_one.score or self.player_two.score < 3:

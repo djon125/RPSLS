@@ -7,4 +7,5 @@ class Computer(Player):
     
     def choose_gesture(self):
         self.choice = random.choice(self.possible_action)
+        print(f'the {self.name} chose {self.choice} ')
 

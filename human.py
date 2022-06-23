@@ -4,7 +4,7 @@ class Human(Player):
         super().__init__(name)
 
     def choose_gesture(self):
-        self.choice = input('pick' )
+        self.choice = input('pick ')
         if self.choice == '1':
             self.choice = 'rock'
         elif self.choice == '2':
