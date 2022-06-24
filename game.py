@@ -148,6 +148,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_one.name} score is {self.player_one.score}')
+                if self.player_h.score == 2 and self.player_one.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_one.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_one.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_one.choose_gesture()
             elif self.player_h.choice == 'rock' and (self.player_one.choice == 'scissors' or self.player_one.choice == 'lizard'):
@@ -155,6 +161,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_one.name} score is {self.player_one.score}')
+                if self.player_h.score == 2 and self.player_one.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_one.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_one.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_one.choose_gesture()
             elif self.player_h.choice == 'paper' and (self.player_one.choice == 'spock' or self.player_one.choice == 'rock'):
@@ -162,13 +174,25 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_one.name} score is {self.player_one.score}')
+                if self.player_h.score == 2 and self.player_one.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_one.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_one.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_one.choose_gesture()
             elif self.player_h.choice == 'scissors' and (self.player_one.choice == 'paper' or self.player_one.choice == 'lizard'):
                 self.player_h.score += 1  
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(1)
-                print(f'{self.player_one.name} score is {self.player_one.score}')                       
+                print(f'{self.player_one.name} score is {self.player_one.score}')  
+                if self.player_h.score == 2 and self.player_one.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_one.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_one.name} wins!')
+                    break                     
                 self.player_h.choose_gesture()
                 self.player_one.choose_gesture()  
             elif self.player_h.choice == 'lizard' and (self.player_one.choice == 'spock' or self.player_one.choice == 'paper'):
@@ -176,6 +200,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_one.name} score is {self.player_one.score}')
+                if self.player_h.score == 2 and self.player_one.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_one.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_one.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_one.choose_gesture()
             elif self.player_h.choice == 'spock' and (self.player_one.choice == 'scissors' or self.player_one.choice == 'rock'):
@@ -183,6 +213,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_one.name} score is {self.player_one.score}')
+                if self.player_h.score == 2 and self.player_one.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_one.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_one.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_one.choose_gesture()
             else:
@@ -190,6 +226,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_one.name} score is {self.player_one.score}')
+                if self.player_h.score == 2 and self.player_one.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_one.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_one.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_one.choose_gesture()
 
@@ -202,6 +244,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_h_two.name} score is {self.player_h_two.score}')
+                if self.player_h.score == 2 and self.player_h_two.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_h_two.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_h_two.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_h_two.choose_gesture()
             elif self.player_h.choice == 'rock' and (self.player_h_two.choice == 'scissors' or self.player_h_two.choice == 'lizard'):
@@ -209,6 +257,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_h_two.name} score is {self.player_h_two.score}')
+                if self.player_h.score == 2 and self.player_h_two.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_h_two.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_h_two.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_h_two.choose_gesture()
             elif self.player_h.choice == 'paper' and (self.player_h_two.choice == 'spock' or self.player_h_two.choice == 'rock'):
@@ -216,13 +270,25 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_h_two.name} score is {self.player_h_two.score}')
+                if self.player_h.score == 2 and self.player_h_two.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_h_two.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_h_two.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_h_two.choose_gesture()
             elif self.player_h.choice == 'scissors' and (self.player_h_two.choice == 'paper' or self.player_h_two.choice == 'lizard'):
                 self.player_h.score += 1  
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(1)
-                print(f'{self.player_h_two.name} score is {self.player_h_two.score}')                       
+                print(f'{self.player_h_two.name} score is {self.player_h_two.score}')  
+                if self.player_h.score == 2 and self.player_h_two.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_h_two.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_h_two.name} wins!')
+                    break                     
                 self.player_h.choose_gesture()
                 self.player_h_two.choose_gesture()  
             elif self.player_h.choice == 'lizard' and (self.player_h_two.choice == 'spock' or self.player_h_two.choice == 'paper'):
@@ -230,6 +296,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_h_two.name} score is {self.player_h_two.score}')
+                if self.player_h.score == 2 and self.player_h_two.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_h_two.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_h_two.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_h_two.choose_gesture()
             elif self.player_h.choice == 'spock' and (self.player_h_two.choice == 'scissors' or self.player_h_two.choice == 'rock'):
@@ -237,6 +309,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_h_two.name} score is {self.player_h_two.score}')
+                if self.player_h.score == 2 and self.player_h_two.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_h_two.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_h_two.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_h_two.choose_gesture()
             else:
@@ -244,6 +322,12 @@ class Game:
                 print(f'{self.player_h.name} score is {self.player_h.score}')
                 #time.sleep(2)
                 print(f'{self.player_h_two.name} score is {self.player_h_two.score}')
+                if self.player_h.score == 2 and self.player_h_two.score < 2:
+                    print(f'{self.player_h.name} wins!')
+                    break
+                elif self.player_h_two.score == 2 and self.player_h.score < 2:
+                    print(f'{self.player_h_two.name} wins!')
+                    break
                 self.player_h.choose_gesture()
                 self.player_h_two.choose_gesture()
 
