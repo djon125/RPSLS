@@ -24,18 +24,20 @@ class Game:
 
     def run_game(self):
         #self.get_rules()
+        self.mode_select()
+        pass
+    
+    
+    def mode_select(self):
         game = True
+        game_choice = input('Press 1 for human v computer 2 for human v human 3 for a suprise ')
         while game == True:
-            game_choice = input('Press 1 for human v computer 2 for human v human 3 for a suprise ')
             if game_choice == '1':
                 self.player_v_computer()
-                game = False
             elif game_choice == '2':
                 self.player_v_player()
-                game = False
             elif game_choice == '3':
                 self.computer_v_computer()
-                game = False
             else:
                 print('That is not a vaild option, try again.')
                 game_choice = input('Press 1 for human v computer 2 for human v human 3 for a suprise ')
