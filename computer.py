@@ -8,6 +8,6 @@ class Computer(Player):
     
     def choose_gesture(self):
         self.choice = random.choice(self.possible_action)
-        #time.sleep(2)
-        print(f'the {self.name} chose {self.choice} ')
+        time.sleep(2)
+        print(f'{self.name} chooses {self.choice} ')
 
