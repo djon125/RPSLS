@@ -4,3 +4,6 @@ class Player:
         self.choice = None
         self.name = name
         self.possible_action = ["rock", "paper", "scissors", "lizard", "spock"]
+
+
+#parent class

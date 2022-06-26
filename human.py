@@ -4,7 +4,7 @@ class Human(Player):
         super().__init__(name)
 
     def choose_gesture(self):
-        self.choice = input('Chose: 1 for rock, 2 for paper, 3 for scissors, 4 for lizard 5 for spock ')
+        self.choice = input('Chose: 1 for rock, 2 for paper, 3 for scissors, 4 for lizard 5 for spock: ')
         if self.choice == '1':
             self.choice = 'rock'
             print(f'{self.name} chooses {self.choice}')
@@ -26,5 +26,5 @@ class Human(Player):
 
             
 
-
+#child class of player
 
