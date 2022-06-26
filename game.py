@@ -4,10 +4,10 @@ import time #to slow down game
 
 class Game:
     def __init__(self):
-        self.player_one = Computer('robo_one')
-        self.player_two = Computer('robo_two')
-        self.player_h = Human('human_one')
-        self.player_h_two = Human('human_two')
+        self.player_one = Computer('robo one')
+        self.player_two = Computer('robo two')
+        self.player_h = Human('human one')
+        self.player_h_two = Human('humantwo')
 
     def run_game(self):
         self.get_rules()
