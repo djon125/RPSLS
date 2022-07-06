@@ -4,21 +4,21 @@ class Human(Player):
         super().__init__(name)
 
     def choose_gesture(self):
-        self.choice = input('Chose: 1 for rock, 2 for paper, 3 for scissors, 4 for lizard 5 for spock: ')
-        if self.choice == '1':
-            self.choice = 'rock'
+        user_input = input(f'Chose: 1 for {self.possible_action[0]}, 2 for {self.possible_action[1]}, 3 for {self.possible_action[2]}, 4 for {self.possible_action[3]} 5 for {self.possible_action[4]}: ')
+        if user_input == '1':
+            self.choice = self.possible_action[0]
             print(f'{self.name} chooses {self.choice}')
-        elif self.choice == '2':
-            self.choice = 'paper'
+        elif user_input == '2':
+            self.choice = self.possible_action[1]
             print(f'{self.name} chooses {self.choice}')
-        elif self.choice == '3':
-            self.choice = 'scissors'
+        elif user_input == '3':
+            self.choice = self.possible_action[2]
             print(f'{self.name} chooses {self.choice}')
-        elif self.choice == '4':
-            self.choice = 'lizard'
+        elif user_input == '4':
+            self.choice = self.possible_action[3]
             print(f'{self.name} chooses {self.choice}')
-        elif self.choice == '5':
-            self.choice = 'spock'
+        elif user_input == '5':
+            self.choice = self.possible_action[4]
             print(f'{self.name} chooses {self.choice}')
         else:
             print('Not A Valid Input, Try Again:')
